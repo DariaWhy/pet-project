@@ -1,0 +1,140 @@
+* {
+    font-family: "Montserrat", serif;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /*background: #8a878799*/;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    
+}
+
+ul li {
+    display: inline-block;
+    margin: 1.2rem 4rem 1.5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    transform: 0.2s;
+    padding-bottom: 0.1rem;
+}
+
+ul li a:hover{
+    cursor: pointer;
+    border-bottom: solid black 1px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#name-photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+    width: 80vw;
+    background: linear-gradient(rgb(164, 119, 119), rgb(67, 65, 65));
+    background-image: url(theme-beach1.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#name-photo::after {
+    content: '';
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(148, 146, 146, 0.5); 
+    z-index: 1; 
+}
+  
+#name-photo h1 {
+    margin: 2rem;
+    font-size: 5rem;
+    position: relative; 
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.3rem;
+    flex-shrink: 1;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    margin: 0.6rem;
+}
+
+#description span {
+    width: 70vw;
+    text-align: center;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+#amenities-demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid 1px #424040;
+    border-bottom: solid 1px #424040;
+    width: 80vw;
+}
+
+.amenities-container {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    width: 5rem;
+    padding: 0.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    
+}
+
+.amenities-container p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+
+
+  
+
