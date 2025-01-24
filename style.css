@@ -1,6 +1,5 @@
 * {
     font-family: "Montserrat", serif;
-    list-style: none;
 }
 
 body {
@@ -19,19 +18,19 @@ body {
     /*background: #8a878799*/;
 }
 
-ul {
+#nav-menu ul {
     display: flex;
     flex-wrap: wrap;
     box-sizing: content-box;
     
 }
 
-ul li {
+#nav-menu ul li {
     display: inline-block;
     margin: 1.2rem 4rem 1.5rem;
 }
 
-ul li a {
+#nav-menu ul li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -40,7 +39,7 @@ ul li a {
     padding-bottom: 0.1rem;
 }
 
-ul li a:hover{
+#nav-menu ul li a:hover{
     cursor: pointer;
     border-bottom: solid black 1px;
 }
@@ -133,6 +132,110 @@ main {
     font-weight: 500;
 }
 
+#accomodation-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#accomodation-container p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.suit-class {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 2rem;
+    height: 57vh;
+    position: relative;
+    width: 80vw;
+}
+
+.suit-class .container {
+    position: relative;
+}
+
+.suit-class .container img {
+    height: 57vh;
+    width: 45vw;
+}
+
+.suit-class .container .btn {
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    height: 10rem;
+    width: 2rem;
+    
+}
+
+.suit-class #prevBtn-1, 
+.suit-class #prevBtn-2, 
+.suit-class #prevBtn-3 {
+     
+    background: #cfc4c4a5;
+    
+}
+
+.suit-class #nextBtn-1, 
+.suit-class #nextBtn-2, 
+.suit-class #nextBtn-3 {
+    right: 0;
+    background: #cfc4c4a5;
+    
+}
+
+.suit-class-description {
+    width: 35vw;
+    background: #6d645c5b;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 0;
+}
+
+#accomodation-container .suit-class .suit-class-description p{
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.suit-class .suit-class-description ul{
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.suit-class .suit-class-description ul li {
+    display: block;
+    line-height: 1.7rem;
+}
+
+.suit-class .suit-class-description button {
+    
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    background: #5a50479e;
+    font-weight: 500;
+    transition: 0.3s;
+    
+}
+
+.suit-class .suit-class-description button:hover {
+    cursor: pointer;
+    background: #5a5047c6;
+    font-weight: 600;
+}
 
 
 
