@@ -5,7 +5,7 @@ window.onload = function () {
         const images = [
             ['./sr1.jpg', './sr2.jpg'], 
             ['./ob1.jpg', './ob2.jpg'], 
-            ['./pr1.jpg', './pr2.jpg'], 
+            ['./pr1.jpg', './pr2.jpg']
         ];
 
         let currentIndex = 0;
