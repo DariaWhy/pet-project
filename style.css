@@ -60,7 +60,7 @@ main {
     margin: 0;
     padding: 0;
     height: 30rem;
-    width: 80vw;
+    width: 100%;
     background: linear-gradient(rgb(164, 119, 119), rgb(67, 65, 65));
     background-image: url(theme-beach1.jpg);
     background-size: cover;
@@ -83,7 +83,7 @@ main {
     font-size: 5rem;
     position: relative; 
     z-index: 2;
-    color: rgb(0, 0, 0);
+    color: rgb(38, 38, 38);
     letter-spacing: 0.3rem;
     flex-shrink: 1;
 }
@@ -241,7 +241,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     width: 70vw;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 #faqs-title {
@@ -285,6 +285,22 @@ main .faqs .faqs-class p {
 .faqs-class [open] > summary {
     list-style-type: 'ᐱ ';
 } 
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    height: 5rem;
+    background-color: #6d645c5b ;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 
 
   
