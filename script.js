@@ -66,13 +66,18 @@ window.onload = function () {
             closeModal();
         } else {
             const referenceElement = document.getElementById('modal_email'); 
-            const parent = referenceElement.parentNode; // Получаем родителя input
-            const newEl = document.createElement('p');
-            newEl.textContent = "Пожалуйста, добавьте email";
-            newEl.style.textAlign = 'center';
-            newEl.style.color = 'red';
-            newEl.style.fontSize = '0.7rem';
-            parent.insertBefore(newEl, referenceElement);
+            const parent = referenceElement.parentNode; 
+
+            if (!document.getElementById('email-warning')) {
+                const newEl = document.createElement('p');
+                newEl.id = 'email-warning'; 
+                newEl.textContent = "Please add your email to get discount";
+                newEl.style.textAlign = 'center';
+                newEl.style.color = 'red';
+                newEl.style.fontSize = '0.7rem';
+
+                parent.insertBefore(newEl, referenceElement);
+            }
         }
     });
 
