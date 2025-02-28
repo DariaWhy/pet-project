@@ -189,7 +189,6 @@ main {
 .suit-class #nextBtn-3 {
     right: 0;
     background: #cfc4c4a5;
-    
 }
 
 .suit-class-description {
@@ -234,6 +233,11 @@ main {
     cursor: pointer;
     background: #5a5047c6;
     font-weight: 600;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .faqs{

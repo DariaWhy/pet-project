@@ -6,47 +6,67 @@ body {
     margin: 0;
 }
 
-#nav-menu {
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон */
+    display: none; /* скрыто по умолчанию */
+    z-index: 3;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    display: none; /* скрыто по умолчанию */
+    z-index: 1000; /* выше остальных элементов */
+}
+
+#modal #modal-container {
     display: flex;
-    flex-direction: row;
-    height: 5rem;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    /*background: #8a878799*/;
+    flex-direction: column;
+}
+
+#modal #modal-container label,
+#modal #modal-container input {
+    display: block;
+    margin: 1rem;
+    width: 22rem;
+    text-align: center;
+    height: 2rem;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    transition: 0.2s;
+}
+
+#modal #modal-container input:focus{
+    outline: transparent;
+    background-color: rgba(205, 205, 205, 0.531);
+}
+
+#modal #modal-container button {
+    margin: 1rem;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#modal #modal-container button:hover{
+    background-color: rgb(205, 205, 205);
 }
 
 #nav-menu a img {
     width: 5rem;
     height: 5rem;
-}
-
-#nav-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: content-box;
-    
-}
-
-#nav-menu ul li {
-    display: inline-block;
-    margin: 1.2rem 4rem 1.5rem;
-}
-
-#nav-menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    transform: 0.2s;
-    padding-bottom: 0.1rem;
-}
-
-#nav-menu ul li a:hover{
-    cursor: pointer;
-    border-bottom: solid black 1px;
 }
 
 #dining {
@@ -62,14 +82,14 @@ main {
     padding: 0;
 }
 
-#photo-container {
+#photo-container-dining {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-#name-photo {
+#name-photo-dining {
     justify-content: center;
     display: flex;
     margin: 0;
@@ -80,7 +100,7 @@ main {
     background-size: cover;
 }
 
-#name-photo::after {
+#name-photo-dining::after {
     content: '';
     position: absolute;
     top: 6rem;
@@ -91,7 +111,7 @@ main {
     z-index: 1; 
 }
 
-#photo-container h1 {
+#photo-container-dining h1 {
     margin-top: -2.1rem;
     margin-bottom: 0;
     background-color: white;

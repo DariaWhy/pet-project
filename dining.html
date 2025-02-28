@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
     <link rel="stylesheet" href="dining.css">
+    <link rel="stylesheet" href="style.css">
     <link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <div id="modal-container">
+            <form>
+                <label for="modal_email">Get a 10% discount coupon at our restaurant</label>
+                <input type="email" name="" id="modal_email" placeholder="example@gmail.com">
+                <button type="button" id="submit_button">Get discount</button>
+                <button type="button" id="modal_button">No, Thanks</button>
+            </form>
+        </div>
+    </div>
+
     <header>
         <div id="nav-menu">
             <a href="index.html"><img src="logo.png" alt="logo" id="logo-img"></a>
@@ -24,8 +37,8 @@
     </header>
 
     <main>
-        <div id="photo-container">
-            <div id="name-photo"></div>
+        <div id="photo-container-dining">
+            <div id="name-photo-dining"></div>
             <h1>Murano Restaurant</h1>
         </div>
         
@@ -57,5 +70,6 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
