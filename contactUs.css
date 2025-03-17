@@ -1,0 +1,41 @@
+#contact {
+    border-bottom: solid black 1px;
+}
+
+#contactUs-container {
+    width: 80vw;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+#information-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3rem;
+    padding: 2rem;
+    width: 25rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms-contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 30rem;
+}
+
+.forms-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}

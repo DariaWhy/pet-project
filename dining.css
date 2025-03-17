@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    height: 100vh;
 }
 
 #overlay {
@@ -77,9 +78,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
+    
 }
 
 #photo-container-dining {

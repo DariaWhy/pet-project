@@ -44,6 +44,11 @@ body {
     border-bottom: solid black 1px;
 }
 
+#nav-menu a img {
+    width: 5rem;
+    height: 5rem;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;

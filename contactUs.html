@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactUs.css">
+    <link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="nav-menu">
+            <a href="index.html"><img src="logo.png" alt="logo" id="logo-img"></a>
+            <ul>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="dining.html" id="dining">Dining</a></li>
+                <li><a href="contactUs.html" id="contact">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="contactUs-container">
+            <div id="information-contacts">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Phone number:</li>
+                    <li>Adress:</li>
+                    <li>Email:</li>
+                </ul>
+            </div>
+
+            <div id="forms-contacts">
+                <div id="email-contact" class="forms-containers">
+                    <form action="" method="post">
+                        <label for="email-contact-form">Your Email:</label>
+                        <input type="email" name="" id="email-contact-form" placeholder="example@gmail.com">
+                    </form>
+                </div>
+
+                <div id="phone-contact" class="forms-containers">
+                    <form action="" method="post">
+                        <label for="phone-number-form">Your phone number:</label>
+                        <input type="number" name="" id="phone-number-form" placeholder="+xxxxxxxxx">
+                    </form>
+                </div>
+
+                <div id="message-form" class="forms-containers">
+                    <form action="" method="post">
+                        <label for="message-contact-form">Your message:</label>
+                        <textarea name="" id="message-contact-form" placeholder="Write your message here"></textarea>
+                    </form>
+                </div>
+
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
