@@ -1,6 +1,6 @@
 let submitButton = document.getElementById('submit-button');
 
-const sendData = function () {
+function sendData() {
     let emailField = document.getElementById('email-contact-form');
     let phoneField = document.getElementById('phone-number-form');
     let messageField = document.getElementById('message-contact-form');
@@ -24,40 +24,41 @@ const sendData = function () {
     document.cookie = `userNumber=${messageData.userNumber}; max-age=604800; path=/`;
     document.cookie = `textToSend=${messageData.textToSend}; max-age=604800; path=/`;
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(messageData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Успешно:', data);
-        emailField.value = '';
-        phoneField.value = '';
-        messageField.value = '';
+    async function fetchSend() {
+        try {
+            let response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(messageData),
+            })   
+            let data = response.json();
+            console.log('Успешно:', data);
+            emailField.value = '';
+            phoneField.value = '';
+            messageField.value = '';
 
-        document.querySelectorAll('.warning').forEach(warning => warning.remove());
-    })
-    .catch(error => console.error('Ошибка:', error));
+            document.querySelectorAll('.warning').forEach(warning => warning.remove());
+        } catch (error) { 
+            console.error('Ошибка:', error);
+        }
+    }
+    fetchSend();
 };
-
-
 
 function showWarning(inputElement, message) {
     const parent = inputElement.parentNode;
-    let warning = parent.querySelector('.warning'); 
+    let warning = parent.querySelector('.warning');
+    
     if (!inputElement.value) {
-        if (!warning) {
-            warning = document.createElement('p');
-            warning.className = 'warning'; 
-            warning.textContent = message;
-            warning.style.color = 'red';
-            warning.style.fontSize = '0.8rem';
-            warning.style.marginTop = '5px';
-            parent.appendChild(warning);
-        }
+        warning = document.createElement('p'); 
+        warning.className = 'warning'; 
+        warning.textContent = message;
+        warning.style.color = 'red';
+        warning.style.fontSize = '0.8rem';
+        warning.style.marginTop = '5px';
+        parent.appendChild(warning);
     } else {
         if (warning) {
             warning.remove(); 
