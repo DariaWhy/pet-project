@@ -32,8 +32,8 @@ function sendData() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(messageData),
-            })   
-            let data = response.json();
+            })
+            let data = response.json();   
             console.log('Успешно:', data);
             emailField.value = '';
             phoneField.value = '';
