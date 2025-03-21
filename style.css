@@ -96,25 +96,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12rem;
-    margin: 0.6rem;
+    height: 11rem;
+    margin: 0.5rem;
+
 }
 
-#description span {
-    width: 70vw;
+#description-text {
+    width: 60vw;
     text-align: center;
-    line-height: 2.2rem;
-    font-size: 1.3rem;
-    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin:0.5rem;
 }
 
 #amenities-demo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-top: solid 1px #424040;
-    border-bottom: solid 1px #424040;
     width: 80vw;
+    margin-bottom: 2rem;
 }
 
 .amenities-container {
@@ -150,12 +150,38 @@ main {
     text-align: center;
 }
 
+#buttons-rooms-list{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    margin: 2rem 0 0 0;
+}
+
+.rooms-buttons {
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.rooms-buttons:hover {
+    cursor: pointer;
+    border-bottom: 2px solid#1e1e1e;
+}
+
+.active-button {
+    border-bottom: 2px solid #1e1e1e;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
 .suit-class {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
     margin: 2rem;
-    height: 57vh;
+    height: 37rem;
     position: relative;
     width: 80vw;
 }
@@ -165,7 +191,7 @@ main {
 }
 
 .suit-class .container img {
-    height: 57vh;
+    height: 37rem;
     width: 45vw;
 }
 
