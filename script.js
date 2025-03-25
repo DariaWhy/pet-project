@@ -17,7 +17,6 @@ window.onload = function () {
         const slider = container.querySelector(`#suit-image-slider-${index + 1}`);
         const prevBtn = container.querySelector(`#prevBtn-${index + 1}`);
         const nextBtn = container.querySelector(`#nextBtn-${index + 1}`);
-
        
         prevBtn.addEventListener('click', () => {
             currentIndex--;
