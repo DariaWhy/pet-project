@@ -1,0 +1,132 @@
+#rooms {
+    border-bottom: solid black 1px;
+}
+
+body{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    height: 45rem;
+}
+
+#main-container-booking {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background: url(room-background1.jpg);
+    background-size: cover;
+}
+
+#main-container-booking::before {
+    content: '';
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    height: 45rem;
+    background-color:  rgba(77, 83, 76, 0.686); 
+    z-index: 1; 
+}
+
+#booking-container-description {
+    z-index: 2;
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+#inputs-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vw;
+}
+
+.input-forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-forms p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    margin: 0.2rem 0 0.2rem;
+}
+
+.input-forms input{
+    border: 1px solid transparent;
+    background-color: #cad4cea0;
+    height: 1.8rem;
+    width: 10rem;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.input-forms select{
+    border: 1px solid transparent;
+    background-color: #cad4cea0;
+    height: 1.8rem;
+    width: 10rem;
+    transition: 0.2s;
+    text-align: center;
+    overflow: scroll;
+}
+
+.input-forms select option {
+    border: 1px solid transparent;
+    background-color: #cad4cea0;
+    height: 1.8rem;
+    width: 10rem;
+    transition: 0.2s;
+    text-align: center;
+    border-radius: 0;
+}
+
+.input-forms input:focus {
+    outline: none;
+    background-color: #9eb1a6a0;
+
+}
+
+#main-container-booking button {
+    z-index: 2;
+    margin: 6rem 4rem 4rem 4rem;
+    height: 2.3rem;
+    width: 15rem;
+    background-color: #cad4cea0;
+    border: none;
+}
+
+#main-container-booking button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: white;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    float: bottom;
+    margin: 0.5rem 0 0;
+}
+
+#footer-container ul li {
+    list-style: none;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin: 1rem 2rem;
+}

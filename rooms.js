@@ -1,14 +1,18 @@
 export class Rooms {
-    constructor(roomNum, category, price, isAvailable){
+    constructor(roomNum, category, price, isAvailable) {
         this.roomNum = roomNum;
         this.category = category;
         this.price = price;
         this.isAvailable = isAvailable;
     }
-    markedAsAvailable() {
-        this.isAvailable = true;
+    availabilitySwitch() {
+        if (!this.isAvailable) {
+            this.isAvailable
+        } else {
+            this.isAvailable == true
+        }
     }
-    markedAsBooked() {
+    markAsBooked() {
         this.isAvailable = false;
     }
 }

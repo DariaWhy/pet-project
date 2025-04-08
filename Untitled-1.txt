@@ -1,0 +1,30 @@
+GET localhost/backend/book {
+    "checkInDate": date,
+    "days": days,
+    "guests": guests
+}
+
+GET localhost/backend/book?checkInDate=date?days=days?guests=guests
+
+book-variant-1.json
+
+{
+    "available_rooms": [
+        "standard", "one", "premium"
+    ]
+    "room_desc": {
+        "standard": "TEXT",
+        "one": "TEXT",
+        "premium": "TEXT",
+    },
+    "room_beds": {
+        "standard": "TEXT",
+        "one": "TEXT",
+        "premium": "TEXT",
+    },
+    "room_picture": {
+        "standard": picture_path,
+        "one": picture_path,
+        "premium": picture_path,
+    }
+}

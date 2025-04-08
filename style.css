@@ -231,6 +231,11 @@ main {
     line-height: 0;
 }
 
+.suit-class-description button a {
+    text-decoration : none;
+    color: black;
+}
+
 #accomodation-container .suit-class .suit-class-description p{
     margin: 0.5rem;
     font-size: 1rem;

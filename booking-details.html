@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking-details.css">
+    <link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="nav-menu">
+            <a href="index.html"><img src="logo.png" alt="logo" id="logo-img"></a>
+            <ul>
+                <li><a href="rooms.html" id="rooms">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-form-container">
+            <div id="full-guest-info">
+                <div class="guest-input-form">
+                    <h2>Guest Information</h2>
+                    <div class="guest-input-data">
+                        <input type="text" name="" id="guest-first-name-1" placeholder="First Name">
+                        <input type="text" name="" id="guest-last-name-1" placeholder="Last Name">
+                        <input type="tel" name="" id="guest-tel-number-1" placeholder="+xxxxxxxxxxx">
+                        <input type="email" name="" id="guest-email-1" placeholder="example@gmail.com">
+                        <input type="text" name="" id="guest-county-1" placeholder="Country">
+                        <input type="text" name="" id="guest-address-1" placeholder="address">
+                    </div>
+                </div>
+
+                <div id="guest-details">
+                    <details>
+                        <summary>Request or special needs</summary>
+                        <textarea type="text" name="" id="guest-special-needs"
+                            placeholder="Please note your requests or special needs"
+                            maxlength="150">
+                        </textarea>
+                    </details>
+                </div>
+
+                <div id="guest-acknowledgment">
+                    <h2>Acknowledgement</h2>
+                    <div class="guest-agreemnet">
+                        <input type="checkbox" name="" id="offers">
+                        <label for="offers">I would like to receive newsletters and special offers by email.</label>
+                    </div>
+                    <div class="guest-agreemnet" id="">
+                        <input type="checkbox" name="" id="privacy" required>
+                        <label for="privacy">I agree with the Privacy Terms.</label>
+                    </div>
+                    <div class="guest-agreemnet">
+                        <input type="checkbox" name="" id="booking" required>
+                        <label for="booking">I agree with the Booking Conditions.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="total-details">
+               
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

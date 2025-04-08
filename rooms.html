@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rooms.css">
+    <link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="nav-menu">
+            <a href="index.html"><img src="logo.png" alt="logo" id="logo-img"></a>
+            <ul>
+                <li><a href="rooms.html" id="rooms">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="main-container-booking">
+            <h1 id="booking-container-description">Book Now</h1>
+            <div id="inputs-container">
+                <div class="input-forms">
+                    <p>Check In:</p>
+                    <input type="date" name="" id="booking-date" required>
+                </div>
+                <div class="input-forms">
+                    <p>Staying Days:</p>
+                    <select id="booking-days" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="input-forms"> 
+                    <p>Guests:</p>
+                    <select id="booking-guests" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit"><a href="booking-room.html">Check availability</a></button>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <ul>
+                <li>+382 32 660 660</li>
+                <li>2333 NW Vaughn St, Portland, OR 97210, USA</li>
+                <li>reservations.pm@regenthotels.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
