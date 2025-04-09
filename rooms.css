@@ -45,8 +45,16 @@ main {
     letter-spacing: 0.3rem;
 }
 
-#inputs-container {
+#booking-form {
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60vw;
+    align-items: center;
+}
+
+#allInputs {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -58,35 +66,38 @@ main {
     flex-direction: column;
 }
 
-.input-forms p {
+#allInputs .input-forms label {
     font-size: 1.2rem;
     font-weight: 400;
     color: white;
     margin: 0.2rem 0 0.2rem;
 }
 
-.input-forms input{
+#allInputs .input-forms input{
     border: 1px solid transparent;
-    background-color: #cad4cea0;
-    height: 1.8rem;
-    width: 10rem;
+    background-color: #979a98be;
+    height: 2.5rem;
+    width: 14rem;
     transition: 0.2s;
     text-align: center;
+    color: white;
+    margin: 0.5rem;
 }
 
-.input-forms select{
+#allInputs .input-forms select{
     border: 1px solid transparent;
-    background-color: #cad4cea0;
-    height: 1.8rem;
-    width: 10rem;
+    background-color:  #979a98be;
+    height: 2.5rem;
+    width: 14rem;
     transition: 0.2s;
     text-align: center;
-    overflow: scroll;
+    margin: 0.5rem;
+    color: white;
 }
 
-.input-forms select option {
+#allInputs .input-forms select option {
     border: 1px solid transparent;
-    background-color: #cad4cea0;
+    background-color: #979a98de;
     height: 1.8rem;
     width: 10rem;
     transition: 0.2s;
@@ -94,28 +105,25 @@ main {
     border-radius: 0;
 }
 
-.input-forms input:focus {
+#allInputs .input-forms input:focus {
     outline: none;
     background-color: #9eb1a6a0;
 
 }
 
-#main-container-booking button {
+#booking-form button {
     z-index: 2;
     margin: 6rem 4rem 4rem 4rem;
     height: 2.3rem;
     width: 15rem;
-    background-color: #cad4cea0;
+    background-color:#979a98be;
+    color: white;
     border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
 }
 
-#main-container-booking button a {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    color: white;
-    font-weight: 500;
-}
 
 footer {
     display: flex;

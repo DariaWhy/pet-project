@@ -10,7 +10,11 @@ book-variant-1.json
 
 {
     "available_rooms": [
-        "standard", "one", "premium"
+        "standard" : {
+            beds: queen,
+            guestMax: 2
+        },
+        "one", "premium"
     ]
     "room_desc": {
         "standard": "TEXT",

@@ -1,0 +1,41 @@
+{
+    "rooms": [
+      {
+        "id": "standart-room",
+        "name": "Standard Room",
+        "type": "standard",
+        "available": true,
+        "features": ["Balcony", "Coffee maker", "Wi-Fi included", "Bath amenities"],
+        "description": "A comfortable room with a balcony, coffee maker, Wi-Fi, and bath amenities.",
+        "beds": "1 King Bed, or 2 Queen Beds",
+        "price": 100,
+        "picture": "standart.jpg",
+        "maxGuests": 2
+      },
+      {
+        "id": "one-bedroom",
+        "name": "One Bedroom Suite",
+        "type": "one",
+        "available": true,
+        "features": ["Balcony", "Coffee maker", "Wi-Fi included", "Bath amenities", "Courtyard view"],
+        "description": "A spacious suite with a balcony and a courtyard view.",
+        "beds": "1 King Bed, or 2 Queen Beds",
+        "price": 300,
+        "picture": "one-bed.jpg",
+        "maxGuests": 2
+      },
+      {
+        "id": "luxury-room",
+        "name": "Premium Room",
+        "type": "premium",
+        "available": true,
+        "features": ["Balcony", "Coffee maker", "Wi-Fi included", "Bath amenities", "Courtyard view", "All inclusive"],
+        "description": "A luxurious room with all-inclusive services and stunning views.",
+        "beds": "1 King Bed, and 2 Queen Beds",
+        "price": 500,
+        "picture": "lux.jpg",
+        "maxGuests": 4
+      }
+    ]
+  }
+  

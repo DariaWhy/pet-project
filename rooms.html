@@ -27,39 +27,43 @@
     <main>
         <div id="main-container-booking">
             <h1 id="booking-container-description">Book Now</h1>
-            <div id="inputs-container">
-                <div class="input-forms">
-                    <p>Check In:</p>
-                    <input type="date" name="" id="booking-date" required>
+            <form id="booking-form" action="#" method="GET">
+                <div id="allInputs">
+                    <div class="input-forms">
+                        <label for="booking-date">Check In:</label>
+                        <input type="date" id="booking-date" name="check-in" required>
+                    </div>
+                    <div class="input-forms">
+                        <label for="booking-days">Staying Days:</label>
+                        <select id="booking-days" name="staying-days" required>
+                            <option value="">Select days</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="input-forms">
+                        <label for="booking-guests">Guests:</label>
+                        <select id="booking-guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="input-forms">
-                    <p>Staying Days:</p>
-                    <select id="booking-days" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-                <div class="input-forms"> 
-                    <p>Guests:</p>
-                    <select id="booking-guests" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-            </div>
-            <button type="submit"><a href="booking-room.html">Check availability</a></button>
+                <button type="button" id="checkAvailability">Check availability</button>
+            </form>
         </div>
-    </main>
+    </main>    
     <footer>
         <div id="footer-container">
             <ul>
@@ -69,5 +73,6 @@
             </ul>
         </div>
     </footer>
+    <script src="checkAvailability.js"></script>
 </body>
 </html>
