@@ -1,7 +1,6 @@
 import { createRoomCard } from './room-card.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-
     const bookingData = JSON.parse(localStorage.getItem('booking'));
 
     try {
@@ -23,7 +22,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         container.innerHTML = '';
         
         rooms.forEach(room => {
-            container.appendChild(createRoomCard(room));
+            const card = createRoomCard(room);
+
+            card.addEventListener('click', (e) => {
+                e.preventDefault(); 
+
+                const bookingData = JSON.parse(localStorage.getItem('booking')) || {};
+                bookingData.selectedRoom = room.id;
+                localStorage.setItem('booking', JSON.stringify(bookingData));
+
+                window.location.href = card.href;
+            });
+            
+            container.appendChild(card);
         });
     }
 });

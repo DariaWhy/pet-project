@@ -1,10 +1,11 @@
-
-export function createRoomCard(room) {
-    const card = document.createElement('a');
-    card.className = 'room-option';
-    card.href = `booking-details.html?room=${room.id}`;
-    card.id = room.id;
+export function createRoomCard(room, options = {}) {
+    const card = document.createElement(options.tagName || 'a');
+    card.className = 'room-option' + (options.detailed ? ' detailed-view' : '');
     
+    if (!options.detailed) {
+        card.href = `booking-details.html?room=${room.id}`;
+    }
+
     card.innerHTML = `
         <img src="${room.picture}" alt="${room.name}">
         <h2>${room.name}</h2>
@@ -14,7 +15,7 @@ export function createRoomCard(room) {
             ${room.features.map(feature => `
                 <li>${feature}</li>
             `).join('')}
-            <li>Price: $${room.price} per night</li>
+            ${options.detailed ? '' : `<li>Price: $${room.price} per night</li>`}
         </ul>
     `;
     
