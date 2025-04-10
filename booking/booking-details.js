@@ -1,4 +1,3 @@
-// booking-details.js
 import { createRoomCard } from './room-card.js';
 
 document.addEventListener('DOMContentLoaded', async () => {

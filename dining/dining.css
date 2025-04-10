@@ -100,7 +100,7 @@ main {
     padding: 0;
     height: 30rem;
     width: 100%;
-    background-image: url(dining.png);
+    background-image: url(/dining/dining.png);
     background-size: cover;
 }
 

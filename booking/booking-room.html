@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="/main/style.css">
+    <link rel="stylesheet" href="/booking/booking-room.css">
+    <link href="/main/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="nav-menu">
+            <a href="/main/index.html"><img src="/main/logo.png" alt="logo" id="logo-img"></a>
+            <ul>
+                <li><a href="/booking/rooms.html" id="rooms">Rooms</a></li>
+                <li><a href="/amenities/amenities.html">Amenities</a></li>
+                <li><a href="/dining/dining.html">Dining</a></li>
+                <li><a href="/contact us/contactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="all-rooms-container">
+            <h1>Select a Room</h1>
+            <div class="rooms-options">\
+                <!-- сгенерируется в booking-room.js с помощью room-card.js -->
+            </div>
+        </div>
+    </main>
+
+    <script src="/booking/checkAvailability.js"></script>
+    <script type="module" src="/booking/booking-room.js"></script>
+</body>
+</html>
+

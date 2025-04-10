@@ -231,7 +231,7 @@ main {
     line-height: 0;
 }
 
-.suit-class-description button a {
+.suit-class-description .roomsLink {
     text-decoration : none;
     color: black;
 }
