@@ -183,14 +183,22 @@
                         <ul>
                             <li>Balcony</li>
                             <li>Courtyard View</li>
-                            <li>Sofa Bed</li>
                             <li>Coffee maker</li>
                             <li>Wi-Fi included</li>
                             <li>Bath amenities</li>
+                            <li>All inclusive</li>
                         </ul>
                         <button class="roomsLink">Book Now</button>
                     </div>
                 </div>
+                <script>
+                    const buttonsLink = document.getElementsByClassName('roomsLink');
+                    Array.from(buttonsLink).forEach(button => {
+                        button.addEventListener('click', () => {
+                            window.location.href = "/booking/rooms.html";
+                        });
+                    });
+                </script>
             
             </div>
             

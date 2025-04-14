@@ -175,14 +175,18 @@ main {
     color: #1e1e1e;
 }
 
+#suit-containers {
+    margin: 2rem 2rem;
+}
+
 .suit-class {
     display: flex;
     flex-direction: row;
-    padding: 2rem 2rem 4rem;
-    margin: 2rem;
+    margin: 3rem 2rem 4rem 2rem;
     height: 37rem;
     position: relative;
     width: 80vw;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.226);
 }
 
 .suit-class .container {
@@ -222,7 +226,7 @@ main {
 
 .suit-class-description {
     width: 35vw;
-    background: #6d645c5b;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 3rem;
@@ -250,6 +254,16 @@ main {
 .suit-class .suit-class-description ul li {
     display: block;
     line-height: 1.7rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.suit-class .suit-class-description ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #111;
+    font-size: 0.85rem;
 }
 
 .suit-class .suit-class-description button {
@@ -257,7 +271,9 @@ main {
     width: 15rem;
     height: 3rem;
     border: none;
-    background: #5a50479e;
+    background: black;
+    text-transform: uppercase;
+    color: white;
     font-weight: 500;
     transition: 0.3s;
     

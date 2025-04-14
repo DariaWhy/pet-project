@@ -1,9 +1,14 @@
 import { createRoomCard } from './room-card.js';
+import { createGuestForms } from './guest-info-card.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const bookingData = JSON.parse(localStorage.getItem('booking')) || {};
     const urlParams = new URLSearchParams(window.location.search);
     const container = document.getElementById('total-details');
+    const guestsCount = bookingData.guests || 1;
+
+    const guestForms = createGuestForms(guestsCount);
+    document.getElementById('full-guest-info').prepend(guestForms);
 
     /*if (!bookingData.selectedRoom) {
         const roomId = urlParams.get('room');
